@@ -38,8 +38,8 @@ Chrome Version 71.0.3578.98
 * **content belongs to respective creators**
 
 
-### Algorithms 
-1. [Dynamic Programming](#dynamicProgramming)
+### Design Concepts  
+1. [Design Patterns](#designPatterns)
     * [Fibonacci Numbers](#dynamicProgrammingFibonacciNumbers)
 2. [Sorting](#sorting)
     * [Bucket Sort](#sortingBucketSort)
@@ -53,17 +53,17 @@ Chrome Version 71.0.3578.98
 
 
 
-### Data Structures 
+### Design Questions  
 1. [Trie](#trie)
 
 
 
-# Algorithms 
+# Design Concepts  
 
 <br><br><br>
 ***
-<a name="dynamicProgramming"></a>
-# Dynamic Programming 
+<a name="designPatterns"></a>
+# Design Patterns 
 
 
 Dynamic Programming is mainly an optimization over plain recursion. Whenever we see a recursive 
