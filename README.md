@@ -6,7 +6,7 @@ online websites so I do not take any ownership of the below. The following is si
 
 ## Getting Started
 
-Currently AlgorithmsDataStructures-CheatSheet contains various text files for notes but is primarily composed of this README file which supports the markdown formatting language. This makes the notes and code look a lot better and supports many awesome features like quick links 
+Currently SystemDesign-CheatSheet contains various text files for notes but is primarily composed of this `README.md` file which supports the markdown formatting language. This makes the notes and code look a lot better and supports many awesome features like quick links 
 and makes formatting much easier. 
 
 
@@ -40,7 +40,11 @@ Chrome Version 71.0.3578.98
 
 ### Design Concepts  
 1. [Design Patterns](#designPatterns)
-    * [Fibonacci Numbers](#dynamicProgrammingFibonacciNumbers)
+    * [Factory Method](#factoryMethod)
+    * [Abstract Factory](#abstractFactory)
+    * [Builder](#builder)
+    * [Prototype](#prototype)
+    * [Singleton](#singleton)
 2. [Sorting](#sorting)
     * [Bucket Sort](#sortingBucketSort)
     * [Bubble Sort](#sortingBubbleSort)
@@ -65,33 +69,18 @@ Chrome Version 71.0.3578.98
 <a name="designPatterns"></a>
 # Design Patterns 
 
+Design patterns are typical solutions to commonly occuring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in the codebase. 
 
-Dynamic Programming is mainly an optimization over plain recursion. Whenever we see a recursive 
-solution that has repeated calls for the same inputs we can optimize it using Dynamic Programming. The
-idea is to simply store the results of the subproblems so that we do not have to re-compute them when
-needed later. This simple optimization reduces time complexities from exponential to polynomial. For 
-example, if we write the simple recursive solution for Fibonacci numbers, we get exponential time 
-complexity and if we optimize it by storing solutions of subproblems time complexity reduces to linear.
+Patterns are not specific pieces of code, but rather a general concept for solving a particular problem - they are often confused with algorithms because both describe typical solutions to some known problems. 
 
-We break a complex problem up into a collection of simpler subproblems and solve each of those 
-subproblems just once and storing their solutions using a memory-based data structure. 
-
-
+- Design patterns are a toolkit of tried and tested solutions to common problems in software design. Even if we never encounter these problems, knowing patterns is still useful becuase it teaches how to solve problems using the principles of object-oriented design. 
 
 
 
 <br><br>
-<a name="dynamicProgrammingFibonacciNumbers"></a>
-## Fibonacci Numbers 
+<a name="factoryMethod"></a>
+## Factory Method
 
 <br><br>
-### Approach 1: Recursion
+### Intent
 
-```java 
-class fibonacci {
-	static int fib(int n) {
-		if (n<=1){
-			return n;
-		}
-		return fib(n-1) + fib(n-2);
-	}
